@@ -11,7 +11,7 @@ public class DeleteCustomerPom {
 	
 	@FindBy(how=How.XPATH,using="//input[@name='submit']") private WebElement submit;
 	
-	
+	@FindBy(how=How.XPATH,using="//input[@name='res']") private WebElement Reset;
 	
 	public WebElement gettxt_customerId() {
 		return txt_customerId;
@@ -19,5 +19,9 @@ public class DeleteCustomerPom {
 	
 	public WebElement getsubmit() {
 		return submit;
+	}
+	
+	public WebElement getReset() {
+		return Reset;
 	}
 }
